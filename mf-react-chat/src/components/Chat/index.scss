@@ -1,0 +1,79 @@
+.chat-modal {
+
+  .modal-content {
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 5px;
+    max-width: 500px;
+  }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 70px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: transparent;
+
+    .header-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-name {
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+
+      &-status {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .status-circle {
+          height: 6px;
+          width: 6px;
+          border-radius: 50%;
+          margin-right: 5px;
+
+          &.online { background: var(--teal); }
+          &.offline { background: #3f4254; }
+        }
+
+        .status-description {
+          color: #b5b5c3;
+          font-size: .925rem;
+        }
+      }
+    }
+
+
+
+    button {
+      border: none;
+      background: transparent;
+      color: #b5b5c3;
+      height: 42px;
+      width: 42px;
+      border-radius: 5px;
+
+      &:hover {
+        color: #00bdcc;
+        background-color: #f3f6f9;
+      }
+    }
+
+  }
+
+  .modal-section {
+    padding: 1rem 1.5rem;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #ebedf3;
+    }
+
+  }
+
+}
