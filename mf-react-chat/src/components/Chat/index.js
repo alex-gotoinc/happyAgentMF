@@ -39,7 +39,9 @@ const Chat = ({name}) => {
 							</div>
 							<div className="header-info-status">
 								<span className={`status-circle ${online ? 'online': 'offline'}`} />
-								<span className="status-description">Active</span>
+								<span className="status-description">
+									{ online ? 'Active': 'Away' }
+								</span>
 							</div>
 						</div>
 						
